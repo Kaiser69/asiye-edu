@@ -35,7 +35,7 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Dil bilimci/poliglot", "Yeminli Tercüman", "Çince", " İngilizce ", "dil Öğretmeniyim"],
+        strings: ["Dil bilimci", "Yeminli Tercüman", "Çince", " İngilizce ", "Dil Eğitmeni "],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
