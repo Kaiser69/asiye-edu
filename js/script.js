@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Dilbilimci ", "Mütercim", "Dil Öğretmeni", " ( polyglot )  "],
+        strings: ["Dilbilimci ", "Mütercim", "Çince", " İngilizce ", "Dil Eğitmeni "],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
