@@ -6,18 +6,20 @@
     <title>Document</title>
      <style>
     /* Reset margin and padding */
-    html, body { height: 100%; margin: 18px; }
-    .image-container.full-viewport {
-      width: 100%;
-      height: 100vh;       /* parent has explicit height */
-      overflow: hidden;    /* hides any overflow from object-fit cover */
-    }
+     /* container width helper classes */
+    .image-container { margin: 0 auto; } /* center */
+    .w-100 { width: 100%; }
+    .w-75  { width: 75%;  }
+    .w-50  { width: 50%;  }
+
+    /* responsive image that keeps aspect ratio */
     .fullpage-img {
       width: 100%;
-      height: 100%;        /* works because parent has height:100vh */
-      object-fit: cover;   /* fills while preserving aspect ratio */
+      height: auto;      /* IMPORTANT: keeps aspect ratio */
       display: block;
+      max-width: 100%;
     }
+
   </style>
 </head>
 <body>
