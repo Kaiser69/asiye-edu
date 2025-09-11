@@ -6,23 +6,16 @@
     <title>Document</title>
      <style>
     /* Reset margin and padding */
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
+    html, body { height: 100%; margin: 18px; }
+    .image-container.full-viewport {
       width: 100%;
+      height: 100vh;       /* parent has explicit height */
+      overflow: hidden;    /* hides any overflow from object-fit cover */
     }
-
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
     .fullpage-img {
       width: 100%;
-      height: 100%;
-      object-fit: cover; /* keeps aspect ratio and fills the screen */
+      height: 100%;        /* works because parent has height:100vh */
+      object-fit: cover;   /* fills while preserving aspect ratio */
       display: block;
     }
   </style>
